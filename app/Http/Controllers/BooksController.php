@@ -8,7 +8,7 @@ class BooksController extends Controller
 {
     public function index()
     {
-        $data['books'] = Company::orderBy('id','desc')->paginate(5);
+        $data['books'] = Book::orderBy('id','desc')->paginate(5);
         return view('books.index', $data);
     }
 
