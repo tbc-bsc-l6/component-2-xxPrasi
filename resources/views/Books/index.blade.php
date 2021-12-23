@@ -37,7 +37,10 @@
                             Number of pages: {{ $book->total_pages}}</p>
 
                             <form action="{{ route('books.destroy',$book->id) }}" method="Post">
-                                <a class="btn btn-dark float-end" href="{{ route('books.edit',$book->id) }}">Select</a>
+                                <a class="btn btn-dark float-start" href="{{ route('books.edit',$book->id) }}">Select</a>
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger float-end">Delete</button>
                             </form>
                         </div>
                     </div>
