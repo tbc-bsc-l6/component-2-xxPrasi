@@ -10,8 +10,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                PRODUCT STORE
+            <a class="navbar-brand" href="/">
+                STORE NAME
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,8 +33,29 @@
     </nav>
 
     <div class="container mt-5">
-        <h2>Products</h2>
+        <div class="row">
+            <h2>Products</h2>
+            <div class="col-lg-4 mb-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h1 class="display-1"><a href="books" style="text-decoration:none">Book</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-lg-4 mb-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h1 class="display-1"><a href="cds" style="text-decoration:none">CD</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
