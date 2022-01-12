@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BooksController;
 use App\Http\Controllers\CDsController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,16 +16,14 @@ use App\Http\Controllers\CDsController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
    return view('welcome');
-});
+});*/
 
 Route::resource('books', BooksController::class);
 
 Route::resource('cds', CDsController::class);
 
 
+Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
