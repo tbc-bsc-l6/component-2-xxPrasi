@@ -24,3 +24,7 @@ Route::resource('books', BooksController::class);
 Route::resource('cds', CDsController::class);
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

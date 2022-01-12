@@ -32,16 +32,16 @@
         </div>
     </nav>
 
-    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+    <!--<div id="carouselControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="" style="background-color: red;" alt="First slide">
+                <img class="d-block w-100" src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/resources/views/banner.jpg" alt="Vintage welcome text">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="" alt="Second slide">
+                <img class="d-block w-100" src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/readme_images/bookstore.jpg" alt="Girl reading a book looking through bookshelf">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="" alt="Third slide">
+                <img class="d-block w-100" src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/readme_images/cdstore.jpg" alt="Man choosing a cd from record store">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
@@ -52,7 +52,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div>--!>
 
     <div class="container mt-5">
         <div class="row">
