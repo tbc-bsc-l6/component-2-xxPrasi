@@ -8,7 +8,7 @@ class CDsController extends Controller
 {
     public function index()
     {
-        $data['cds'] = CD::orderBy('id','desc')->paginate(5);
+        $data['cds'] = CD::orderBy('id','desc')->paginate(15);
         return view('cds.index', $data);
     }
 
