@@ -12,6 +12,12 @@ class CDsController extends Controller
         return view('cds.index', $data);
     }
 
+    public function userIndex()
+    {
+        $data['cds'] = CD::orderBy('id','desc')->paginate(15);
+        return view('cds.userIndex', $data);
+    }
+
     public function create()
     {
         return view('cds.create');

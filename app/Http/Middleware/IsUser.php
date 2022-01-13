@@ -20,6 +20,6 @@ class IsUser
             return $next($request);
         }
 
-        return redirect('/admin/home')->with('error',"Sorry no user access granted");
+        return redirect('/admin/home')->with('error',"Sorry no access granted");
     }
 }

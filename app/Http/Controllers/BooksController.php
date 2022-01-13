@@ -14,7 +14,8 @@ class BooksController extends Controller
 
     public function userIndex()
     {
-        return view('books.userIndex');
+        $data['books'] = Book::orderBy('id','desc')->paginate(15);
+        return view('books.userIndex', $data);
     }
 
     public function create()

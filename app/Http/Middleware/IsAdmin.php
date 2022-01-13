@@ -21,6 +21,6 @@ class IsAdmin
             return $next($request);
         }
 
-        return redirect('/home')->with('error',"Sorry no admin access granted");
+        return redirect('/home')->with('error',"Sorry no access granted");
     }
 }

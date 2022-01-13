@@ -99,7 +99,7 @@
                     <p class="card-text">
                         Visit the world and get lost within the words. Nothing can capture the imagination as much as books do.
                     </p>
-                    <a href="" class="btn btn-lg btn-outline-dark">Go to Books</a>
+                    <a href="{{ route('userBooks') }}" class="btn btn-lg btn-outline-dark">Go to Books</a>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
                     <p class="card-text">
                         Music can be whatever you want it to be. Whether an escape from reality or a just background noise.
                     </p>
-                    <a href="cds.userIndex" class="btn btn-lg btn-outline-dark">Go to CDs</a>
+                    <a href="{{ route('userCds') }}" class="btn btn-lg btn-outline-dark">Go to CDs</a>
                 </div>
             </div>
         </div>

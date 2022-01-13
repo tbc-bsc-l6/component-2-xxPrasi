@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\BooksController;
 use App\Http\Controllers\CDsController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginControllers;
 
-use App\Models\Book;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,4 +40,6 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
 
 Route::middleware(['auth', 'is_user'])->group(function () {
     Route::view('/home', 'home');
+    Route::get('/user/books',[BooksController::class, 'userIndex'])->name('userBooks');
+    Route::get('/user/cds',[CDsController::class, 'userIndex'])->name('userCds');
 });
