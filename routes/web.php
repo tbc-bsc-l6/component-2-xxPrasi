@@ -1,9 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Routing\Router;
+use Illuminate\Http\Request;
+
 use App\Http\Controllers\BooksController;
 use App\Http\Controllers\CDsController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +28,4 @@ Route::resource('cds', CDsController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

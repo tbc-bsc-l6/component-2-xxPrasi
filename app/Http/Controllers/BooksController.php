@@ -12,6 +12,11 @@ class BooksController extends Controller
         return view('books.index', $data);
     }
 
+    public function userIndex()
+    {
+        return view('books.userIndex');
+    }
+
     public function create()
     {
         return view('books.create');
