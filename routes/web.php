@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\BooksController;
 use App\Http\Controllers\CDsController;
+use App\Http\Controllers\HomeController;
+
+use App\Models\Book;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,11 +24,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('books', BooksController::class);
-Route::resource('cds', CDsController::class);
+//Route::resource('books', BooksController::class);
+//Route::resource('cds', CDsController::class);
 
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::middleware(['auth', 'is_admin'])->group(function () {
+    Route::view('/admin/home', 'adminHome');
+    Route::resource('/admin/books', BooksController::class);
+    Route::resource('/admin/cds', CDsController::class);
+});
+
+Route::middleware(['auth', 'is_user'])->group(function () {
+    Route::view('/home', 'home');
+});
