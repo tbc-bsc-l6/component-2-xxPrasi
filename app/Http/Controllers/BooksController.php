@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class BooksController extends Controller
 {
-
+    public function index(Request $request)
+    {
+        $data['books'] = Book::orderBy('id','desc')->paginate(15);
+        return view('books.index', $data);
+    }
 
     public function userIndex()
     {
