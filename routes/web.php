@@ -16,11 +16,13 @@ use App\Http\Controllers\CDsController;
 */
 
 Route::get('/', function () {
-   return view('welcome');
+   return view('index');
 });
 
 Route::resource('books', BooksController::class);
-
 Route::resource('cds', CDsController::class);
+
+
+
 
 

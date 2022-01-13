@@ -55,17 +55,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="books">Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cds">CD</a>
-                    </li>
-                </ul>
                 <!--<a class="nav-item nav-link active" style="margin-right: 10px;margin-left: 5px;" href="register" role="button">Register</a>
                 <a class="nav-item nav-link active" href="login" role="button">Log In</a>
                 <div class="navbar-nav ml-auto">
@@ -97,7 +86,7 @@
                     <p>
                         Be a part of the community. Enjoy endless recommendations of your interest.
                     </p>
-                    <a href="register" class= "btn btn-lg btn-outline-light">
+                    <a href="" class= "btn btn-lg btn-outline-light">
                         Register Now
                     </a>
                 </div>
@@ -111,7 +100,7 @@
                     <p>
                         Be a part of the community. Enjoy endless recommendations of your interest.
                     </p>
-                    <a href="register" class= "btn btn-lg btn-outline-light">
+                    <a href="" class= "btn btn-lg btn-outline-light">
                         Register Now
                     </a>
                 </div>
@@ -125,7 +114,7 @@
                     <p>
                         Be a part of the community. Enjoy endless recommendations of your interest.
                     </p>
-                    <a href="register" class= "btn btn-lg btn-outline-light">
+                    <a href="" class= "btn btn-lg btn-outline-light">
                         Register Now
                     </a>
                 </div>
@@ -142,33 +131,11 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
-            <h1><center>Category</center></h1>
-            <div class="col-md-6">
-                <div class="card" style="width: 100%;">
-                    <img class="card-img-top" src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/resources/views/book.png" alt="Girl reading book">
-                    <div class="card-body">
-                            <h5 class="card-title">Books</h5>
-                            <p class="card-text">
-                                Visit the world and get lost within the words. Nothing can capture the imagination as much as books do.
-                            </p>
-                            <a href="books" class="btn btn-lg btn-outline-dark">Go to Books</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-            <div class="card" style="width: 100%;">
-                    <img class="card-img-top" src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/resources/views/cd.jpg" alt="Girl listening to music">
-                    <div class="card-body">
-                            <h5 class="card-title">CDs</h5>
-                            <p class="card-text">
-                                Music can be whatever you want it to be. Whether an escape from reality or a just background noise.
-                            </p>
-                            <a href="cds" class="btn btn-lg btn-outline-dark">Go to CDs</a>
-                    </div>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center">
+            <h1>Thank you for visiting us!</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h4>Please log in  or register.</h4>
         </div>
     </div>
 
@@ -176,8 +143,8 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
