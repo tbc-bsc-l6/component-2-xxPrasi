@@ -100,6 +100,7 @@
                     <div class="mb-2">
                         <a class="btn btn-outline-dark" href="{{ route('books.create') }}"> Add New</a>
                     </div>
+
                </div>
             </div>
         </div>
