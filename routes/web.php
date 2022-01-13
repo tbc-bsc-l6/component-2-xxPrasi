@@ -14,15 +14,22 @@ use App\Http\Controllers\CDsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
    return view('index');
 });
 
 Route::resource('books', BooksController::class);
 Route::resource('cds', CDsController::class);
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
 
 
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
