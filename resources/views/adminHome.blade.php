@@ -28,6 +28,9 @@
             background-size: cover;
             opacity: 0.5;
         }
+        .card-body{
+        background-color:#ADA8BE;
+        }
 </style>
 <div id="slideCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -45,7 +48,7 @@
                 <p>
                     Be a part of the community. Enjoy endless recommendations of your interest.
                 </p>
-                <a href="" class= "btn btn-lg btn-outline-light">
+                <a href="{{ route('register') }}" class= "btn btn-lg btn-outline-light">
                     Register Now
                 </a>
             </div>
@@ -59,7 +62,7 @@
                 <p>
                     Be a part of the community. Enjoy endless recommendations of your interest.
                 </p>
-                <a href="" class= "btn btn-lg btn-outline-light">
+                <a href="{{ route('register') }}"class= "btn btn-lg btn-outline-light">
                     Register Now
                 </a>
             </div>
@@ -73,27 +76,27 @@
                 <p>
                     Be a part of the community. Enjoy endless recommendations of your interest.
                 </p>
-                <a href="" class= "btn btn-lg btn-outline-light">
+                <a href="{{ route('register') }}" class= "btn btn-lg btn-outline-light">
                     Register Now
                 </a>
             </div>
         </div>
     </div>
-    <a href="#slideCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+    <a href="{{ route('register') }}" class="carousel-control-prev" role="button" data-slide="prev">
         <span class="sr-only">Previous</span>
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </a>
-    <a href="#slideCarousel" class="carousel-control-next" role="button" data-slide="next">
+    <a href="{{ route('register') }}" class="carousel-control-next" role="button" data-slide="next">
         <span class="sr-only">Next</span>
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
 </div>
-<div class="container-fluid">
+<div class="container-fluid mt-4 mb-4">
     <div class="row">
         <h1><center>Category</center></h1>
-        <div class="col-md-6">
+        <div class="col-md-6 mt-4">
             <div class="card" style="width: 100%;">
-                <img class="card-img-top" src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/resources/views/book.png" alt="Girl reading book">
+                <img src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/resources/views/girlbook.jpg" alt="Girl reading book">
                 <div class="card-body">
                     <h5 class="card-title">Books</h5>
                     <p class="card-text">
@@ -104,9 +107,9 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 mt-4">
             <div class="card" style="width: 100%;">
-                <img class="card-img-top" src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/resources/views/cd.jpg" alt="Girl listening to music">
+                <img src="file:///C:/xampp8.0.12/htdocs/laravel/component-2-xxPrasi/resources/views/boymusic.jpg" alt="Boy listening to music">
                 <div class="card-body">
                     <h5 class="card-title">CDs</h5>
                     <p class="card-text">

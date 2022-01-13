@@ -4,12 +4,34 @@
         <meta charset="UTF-8">
         <title>Books</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+        <style>
+            .navbar{
+                background-color:#C6CAED;
+            }
+            .navbar-brand
+            {
+                font-family: 'Lobster Two', cursive;
+                letter-spacing: 2px;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #C6CAED;
+                color: black;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <b>Precious</b>
+                    <b>The Stopshop</b>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -76,7 +98,7 @@
                         <h2 style="margin-right: 2rem;">Books</h2>
                     </div>
                     <div class="mb-2">
-                        <a class="btn btn-dark" href="{{ route('books.create') }}"> Add New</a>
+                        <a class="btn btn-outline-dark" href="{{ route('books.create') }}"> Add New</a>
                     </div>
                </div>
             </div>
@@ -91,20 +113,20 @@
         <div class="container">
             <div class="row">
                 @foreach ($books as $book)
-                <div class="col-lg-4 mb-4">
+                <div class="col-6 col-md-4 mb-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title"><strong>{{ $book->book_name}}</strong></h5>
                             <small>ID: {{ $book->id }}</small></br>
-                            <p class="card-text" style="color:grey">{{ $book->author_first_name}}&nbsp;{{ $book->author_second_name}}</br>
+                            <p class="card-text" style="color:dark grey">{{ $book->author_first_name}}&nbsp;{{ $book->author_second_name}}</br>
                             £{{ $book->price}}</br>
                             Number of pages: {{ $book->total_pages}}</p>
 
                             <form action="{{ route('books.destroy',$book->id) }}" method="Post">
-                                <a class="btn btn-dark float-start" href="{{ route('books.edit',$book->id) }}">Select</a>
+                                <a class="btn btn-outline-dark float-start" href="{{ route('books.edit',$book->id) }}">Select</a>
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger float-end">Delete</button>
+                                <button type="submit" class="btn btn-outline-danger float-end">Delete</button>
                             </form>
                         </div>
                     </div>
@@ -115,9 +137,6 @@
 
         </div>
         {!! $books->links('vendor\pagination.bootstrap-4') !!}
-        <footer class="mt-auto"  style="background-color:#D3D3D3">
-            <p class="d-flex justify-content-center">©Precious2022</p>
-        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

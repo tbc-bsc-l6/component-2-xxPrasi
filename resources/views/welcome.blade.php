@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Precious</title>
+        <title>Welcome</title>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -54,13 +54,25 @@
                 font-family: 'Lobster Two', cursive;
                 letter-spacing: 2px;
             }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #C6CAED;
+                color: black;
+                text-align: center;
+            }
+            .navbar{
+                background-color:#C6CAED;
+            }
         </style>
     </head>
     <body class="d-flex flex-column min-vh-100">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <b>Precious</b>
+                    <b>The Stopshop</b>
                 </a>
                 @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -94,7 +106,7 @@
                             <p>
                                 Be a part of the community. Enjoy endless recommendations of your interest.
                             </p>
-                            <a href="" class= "btn btn-lg btn-outline-light">
+                            <a href="{{ route('register') }}" class= "btn btn-lg btn-outline-light">
                                 Register Now
                             </a>
                         </div>
@@ -108,7 +120,7 @@
                             <p>
                                 Be a part of the community. Enjoy endless recommendations of your interest.
                             </p>
-                            <a href="" class= "btn btn-lg btn-outline-light">
+                            <a href="{{ route('register') }}" class= "btn btn-lg btn-outline-light">
                                 Register Now
                             </a>
                         </div>
@@ -122,23 +134,23 @@
                             <p>
                                 Be a part of the community. Enjoy endless recommendations of your interest.
                             </p>
-                            <a href="" class= "btn btn-lg btn-outline-light">
+                            <a href="{{ route('register') }}" class= "btn btn-lg btn-outline-light">
                                 Register Now
                             </a>
                         </div>
                     </div>
                 </div>
-                <a href="#slideCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <a href="{{ route('register') }}" class="carousel-control-prev" role="button" data-slide="prev">
                     <span class="sr-only">Previous</span>
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
-                <a href="#slideCarousel" class="carousel-control-next" role="button" data-slide="next">
+                <a href="{{ route('register') }}" class="carousel-control-next" role="button" data-slide="next">
                     <span class="sr-only">Next</span>
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </a>
-        </div>
+           </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid mt-4">
             <div class="d-flex justify-content-center">
                 <h1>Thank you for visiting us!</h1>
             </div>
@@ -147,9 +159,9 @@
             </div>
         </div>
 
-        <footer class="mt-auto"  style="background-color:#D3D3D3">
-            <p class="d-flex justify-content-center">©Precious2022</p>
-        </footer>
+        <div class="footer">
+            <p>©The Stopshop2022</p>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
