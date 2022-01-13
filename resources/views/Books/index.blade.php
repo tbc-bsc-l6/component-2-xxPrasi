@@ -71,15 +71,16 @@
 
         <div class="container mt-2">
             <div class="row">
-                <div class="col-lg-12 margin-tb">
+                <div class="col-lg-12">
                     <div class="float-start mb-2">
-                        <h2>Books</h2>
+                        <h2 style="margin-right: 2rem;">Books</h2>
+                    </div>
+                    <div class="mb-2">
+                        <a class="btn btn-dark" href="{{ route('books.create') }}"> Add New</a>
                     </div>
                </div>
-                <div class="mb-3">
-                    <a class="btn btn-dark" href="{{ route('books.create') }}"> Add New</a>
-                </div>
             </div>
+        </div>
         @if ($message = Session::get('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <p>{{ $message }}</p>
@@ -113,10 +114,11 @@
         </div>
 
         </div>
+        {!! $books->links('vendor\pagination.bootstrap-4') !!}
         <footer class="mt-auto"  style="background-color:#D3D3D3">
             <p class="d-flex justify-content-center">©Precious2022</p>
         </footer>
-        {!! $books->links('vendor\pagination.bootstrap-4') !!}
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
