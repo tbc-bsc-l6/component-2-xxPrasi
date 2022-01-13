@@ -32,32 +32,6 @@
             font-family: 'Lobster Two', cursive;
             letter-spacing: 2px;
         }
-        .carousel-item
-        {
-            background: black;
-            color: white;
-            height: 32rem;
-            position: relative;
-        }
-        .container
-        {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding-bottom: 50px;
-        }
-        .overlay-image
-        {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            background-position: center;
-            background-size: cover;
-            opacity: 0.5;
-        }
     </style>
 
 </head>
